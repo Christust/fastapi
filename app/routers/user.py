@@ -6,7 +6,7 @@ from app.serializers.user import UserOut, UserCreate, UserUpdate
 from app.dependencies import get_db, oauth2_schema
 
 user_router = APIRouter(
-    prefix="/users", tags=["users"], dependencies=[Depends(oauth2_schema)]
+    prefix="/users", tags=["Users"], dependencies=[Depends(oauth2_schema)]
 )
 
 

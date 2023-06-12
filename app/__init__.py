@@ -15,6 +15,17 @@ app = FastAPI(
         "name": "Apache 2.0",
         "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
     },
+    openapi_tags = [
+    {
+        "name": "Users",
+        "description": "Operations with users.",
+    },
+    {
+        "name": "Auth",
+        "description": "Auth operations.",
+    },
+]
+
 
 )
 

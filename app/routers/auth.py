@@ -11,7 +11,7 @@ from app.dependencies import (
 from app.models.user import User
 from app.serializers.auth import RefreshToken
 
-auth_router = APIRouter(prefix="/auth", tags=["auth"])
+auth_router = APIRouter(prefix="/auth", tags=["Auth"])
 
 
 @auth_router.post("/")
