@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
-from app.dependencies.database import get_db
+from app.dependencies import get_db
 from app.models.user import User
 
 SECRET_KEY = "CODFA2023"

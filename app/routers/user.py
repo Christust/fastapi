@@ -3,8 +3,7 @@ from typing import Annotated
 from sqlalchemy.orm import Session
 from app.models.user import User
 from app.serializers.user import UserOut, UserCreate, UserUpdate
-from app.dependencies.database import get_db
-from app.dependencies.json_web_token import oauth2_schema
+from app.dependencies import get_db, oauth2_schema
 
 user_router = APIRouter(
     prefix="/users", tags=["users"], dependencies=[Depends(oauth2_schema)]
